@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/canvas_bg">
+  <View android:layout_width="match_parent" android:layout_height="205dp" android:background="@drawable/bg_screen_header" />
+  <View android:layout_width="128dp" android:layout_height="6dp" android:layout_gravity="top|center_horizontal" android:layout_marginTop="10dp" android:background="@drawable/bg_chip_dark" />
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+    <TextView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_header_icon" android:gravity="center" android:text="←" android:textColor="@color/white" android:textSize="22sp" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_account" android:textColor="#99FFFFFF" android:textSize="14sp" />
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/profile" android:textColor="@color/white" android:textSize="24sp" android:textStyle="bold" />
+    </LinearLayout>
+    <View android:layout_width="44dp" android:layout_height="44dp" />
+  </LinearLayout>
+  <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="112dp" android:clipToPadding="false" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="24dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_soft_panel_28" android:elevation="1dp" android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+          <ImageView android:id="@+id/profileImage" android:layout_width="96dp" android:layout_height="96dp" android:background="@drawable/bg_card_white_24" android:clipToOutline="true" android:scaleType="centerCrop" />
+          <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical" android:paddingTop="16dp">
+            <TextView android:id="@+id/profileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:ellipsize="end" android:maxLines="1" android:textColor="@color/slate_900" android:textSize="22sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/reader_profile" android:textColor="@color/slate_500" android:textSize="14sp" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal">
+              <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_chip_white" android:paddingHorizontal="12dp" android:paddingVertical="6dp" android:text="@string/book_lover" android:textColor="@color/slate_600" android:textSize="12sp" />
+              <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:background="@drawable/bg_chip_white" android:paddingHorizontal="12dp" android:paddingVertical="6dp" android:text="@string/library_user" android:textColor="@color/slate_600" android:textSize="12sp" />
+            </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/editProfileButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_button_dark_18" android:gravity="center" android:paddingVertical="14dp" android:text="@string/edit_profile" android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold" />
+      </LinearLayout>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginEnd="6dp" android:layout_weight="1" android:background="@drawable/bg_card_white_20" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:textColor="@color/slate_900" android:textSize="18sp" android:textStyle="bold" />
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/borrowed" android:textColor="@color/slate_500" android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginHorizontal="6dp" android:layout_weight="1" android:background="@drawable/bg_card_white_20" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18" android:textColor="@color/slate_900" android:textSize="18sp" android:textStyle="bold" />
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/finished" android:textColor="@color/slate_500" android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:layout_weight="1" android:background="@drawable/bg_card_white_20" android:gravity="center" android:orientation="vertical" android:padding="16dp">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:textColor="@color/slate_900" android:textSize="18sp" android:textStyle="bold" />
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/reserved" android:textColor="@color/slate_500" android:textSize="12sp" />
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout android:id="@+id/quickActionsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_soft_panel_24" android:orientation="vertical" android:padding="12dp" />
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</FrameLayout>

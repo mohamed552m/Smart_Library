@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/canvas_bg">
+  <View android:layout_width="match_parent" android:layout_height="205dp" android:background="@drawable/bg_screen_header" />
+  <View android:layout_width="128dp" android:layout_height="6dp" android:layout_gravity="top|center_horizontal" android:layout_marginTop="10dp" android:background="@drawable/bg_chip_dark" />
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+    <TextView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_header_icon" android:gravity="center" android:text="←" android:textColor="@color/white" android:textSize="22sp" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_library" android:textColor="#99FFFFFF" android:textSize="14sp" />
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/home" android:textColor="@color/white" android:textSize="24sp" android:textStyle="bold" />
+    </LinearLayout>
+    <View android:layout_width="44dp" android:layout_height="44dp" />
+  </LinearLayout>
+  <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="112dp" android:clipToPadding="false" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="24dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_soft_panel_28" android:elevation="1dp" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_back" android:textColor="@color/slate_500" android:textSize="14sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/find_your_next_read" android:textColor="@color/slate_900" android:textSize="24sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_card_white_18" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="16dp" android:paddingTop="12dp" android:paddingEnd="16dp" android:paddingBottom="12dp">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔎" android:textColor="@color/slate_400" android:textSize="16sp" />
+          <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:background="@android:color/transparent" android:hint="@string/search_books_or_authors" android:inputType="text" android:padding="0dp" android:textColor="@color/slate_900" android:textColorHint="@color/slate_400" android:textSize="15sp" />
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/recommended" android:textColor="@color/slate_900" android:textSize="18sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_all" android:textColor="@color/slate_500" android:textSize="14sp" />
+      </LinearLayout>
+      <LinearLayout android:id="@+id/recommendedContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="vertical" />
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/continue_reading" android:textColor="@color/slate_900" android:textSize="18sp" android:textStyle="bold" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/bg_soft_panel_24" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+        <ImageView android:id="@+id/continueCover" android:layout_width="64dp" android:layout_height="80dp" android:background="@drawable/bg_card_white_18" android:clipToOutline="true" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+          <TextView android:id="@+id/continueTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:ellipsize="end" android:maxLines="1" android:textColor="@color/slate_900" android:textSize="15sp" android:textStyle="bold" />
+          <TextView android:id="@+id/continueAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/slate_500" android:textSize="14sp" />
+          <ProgressBar android:id="@+id/continueProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="12dp" android:max="100" android:progress="68" android:progressTint="@color/slate_900" android:progressBackgroundTint="@color/white" android:splitTrack="false" />
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="68% completed" android:textColor="@color/slate_500" android:textSize="12sp" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</FrameLayout>

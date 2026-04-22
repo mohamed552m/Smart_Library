@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Library Canvas</string>
+    <string name="home">Home</string>
+    <string name="books">Books</string>
+    <string name="borrowings">Borrowings</string>
+    <string name="profile">Profile</string>
+    <string name="search_books_or_authors">Search books or authors</string>
+    <string name="search_books_authors_topics">Search books, authors, or topics</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="find_your_next_read">Find your next read</string>
+    <string name="recommended">Recommended</string>
+    <string name="see_all">See all</string>
+    <string name="continue_reading">Continue reading</string>
+    <string name="library_books">Library Books</string>
+    <string name="filter">Filter</string>
+    <string name="current_books">Current books</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="name">Name</string>
+    <string name="photo_url">Photo URL</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="paste_photo_url">Paste a realistic book image URL</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="reader_profile">Reader Profile</string>
+    <string name="book_lover">Book Lover</string>
+    <string name="library_user">Library User</string>
+    <string name="smart_library">Smart Library</string>
+    <string name="explore">Explore</string>
+    <string name="your_library">Your library</string>
+    <string name="your_account">Your account</string>
+    <string name="active">Active</string>
+    <string name="due_soon">Due Soon</string>
+    <string name="borrowed">Borrowed</string>
+    <string name="finished">Finished</string>
+    <string name="reserved">Reserved</string>
+    <string name="close">Close</string>
+    <string name="splash_intro">Welcome to</string>
+    <string name="splash_subtitle">Your smart reading space</string>
+    <string name="splash_title">Find your next read</string>
+    <string name="splash_description">A clean smart library experience with the same app colors and style.</string>
+    <string name="splash_card_title">Curated library shelves</string>
+    <string name="splash_card_subtitle">Real books, quick borrowings, and a polished reading flow.</string>
+    <string name="splash_loading">Opening your library</string>
+    <string name="splash_start">Enter Library</string>
+</resources>

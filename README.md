@@ -23,13 +23,13 @@ The app focuses on:
   Includes a welcome section, search bar, recommended books, and a continue reading section.
 
 - **Books**  
-  Displays the library collection with search, category filters, and book cards.
+  Displays the library collection with search, filters, and book cards.
 
 - **Borrowings**  
-  Shows active borrowed books, due dates, and status labels.
+  Shows current borrowed books, due dates, and borrowing status.
 
 - **Profile**  
-  Presents user information, reading stats, and quick action cards.
+  Presents user information, reading stats, and quick actions.
 
 ## Features
 
@@ -63,19 +63,20 @@ The design is based on a simple and clear visual system that includes:
 ## Preview
 
 ### Splash
-<img src="./design/splash.png" width="650" />
+<p align="center">
+  <img src="./design/splash.png" width="420" />
+</p>
 
-### Home
-<img src="./design/home.png" width="650" />
+### App Screens
+<p align="center">
+  <img src="./design/home.png" width="47%" />
+  <img src="./design/books.png" width="47%" />
+</p>
 
-### Books
-<img src="./design/books.png" width="650" />
-
-### Borrowings
-<img src="./design/borrowings.png" width="650" />
-
-### Profile
-<img src="./design/profile.png" width="650" />
+<p align="center">
+  <img src="./design/borrowings.png" width="47%" />
+  <img src="./design/profile.png" width="47%" />
+</p>
 
 ## Author
 
